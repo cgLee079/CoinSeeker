@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cglee079.coinseeker.mapper.CoinMsgConfigMapper">
+
+	<select id="get" resultType="com.cglee079.coinseeker.model.CoinMsgConfigVo">
+			SELECT 
+			CONFIG_COINID as 'coinId',
+			CONFIG_DIGIT_KRW as 'digitKRW',
+			CONFIG_DIGIT_USD as 'digitUSD',
+			CONFIG_DIGIT_BTC as 'digitBTC'
+			FROM TB_COINSEEKER_MSG_CONFIG
+			WHERE 1 = 1
+			AND CONFIG_COINID = #{coinId}
+	</select>
+	
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+	<bean class="org.telegram.telegrambots.ApiContextInitializer" init-method="init"></bean>
+
+	<bean id="TelegramClient" class="com.cglee079.coinseeker.telegram.TelegramClient">
+            <constructor-arg ref="TelegramBot" />
+            
+	</bean>
+	
+	<bean id="TelegramBot" class="com.cglee079.coinseeker.telegram.TelegramBot">
+		<constructor-arg index="0" value="517041605:AAFdWrxQjkwxa6VhYGWznYuOMncVDT2CQd8"/>
+		<constructor-arg index="1" value="cg_coin_bot"/>
+	</bean>
+
+</beans>

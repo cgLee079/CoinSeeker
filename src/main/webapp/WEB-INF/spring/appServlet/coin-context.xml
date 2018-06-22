@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="SET" class="com.cglee079.coinseeker.constants.SET"/>
+	<bean id="CoinManager" class="com.cglee079.coinseeker.coin.CoinManager"/>
+	
+	<bean id="KeyboardManager" class="com.cglee079.coinseeker.telegram.KeyboardManager"/>
+	<bean id="MessageMaker" class="com.cglee079.coinseeker.telegram.MessageMaker"/>
+	<bean id="ExchangePooler" class="com.cglee079.coinseeker.coin.ExchangePooler"/>
+	
+	<bean id="CoinonePooler" 	class="com.cglee079.coinseeker.coin.CoinonePooler"/>	
+	<bean id="BithumbPooler" 	class="com.cglee079.coinseeker.coin.BithumbPooler"/>
+	<bean id="UpbitPooler" 		class="com.cglee079.coinseeker.coin.UpbitPooler"/>
+	<bean id="CoinnestPooler" 	class="com.cglee079.coinseeker.coin.CoinnestPooler"/>
+	<bean id="KorbitPooler" 	class="com.cglee079.coinseeker.coin.KorbitPooler"/>
+	<bean id="GopaxPooler" 		class="com.cglee079.coinseeker.coin.GopaxPooler"/>
+
+	<bean id="CoinMarketCapPooler" 		class="com.cglee079.coinseeker.coin.CoinMarketCapPooler"/>	
+	<bean id="BitfinexPooler" 	class="com.cglee079.coinseeker.coin.BitfinexPooler"/>
+	<bean id="BittrexPooler" 	class="com.cglee079.coinseeker.coin.BittrexPooler"/>
+	<bean id="PoloniexPooler" 	class="com.cglee079.coinseeker.coin.PoloniexPooler"/>
+	<bean id="BinancePooler" 	class="com.cglee079.coinseeker.coin.BinancePooler"/>
+	<bean id="HuobiPooler" 		class="com.cglee079.coinseeker.coin.HuobiPooler"/>
+	<bean id="HadaxPooler" 		class="com.cglee079.coinseeker.coin.HadaxPooler"/>
+	<bean id="OkexPooler" 		class="com.cglee079.coinseeker.coin.OkexPooler"/>
+	
+
+</beans>
